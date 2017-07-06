@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="elementCollection" class="Collections">
+		<property name="elementList">
+			<list>
+				<value>Burak Köken</value>
+				<value>Şeyma Yılmaz</value>
+				<value>C Berk Semerci</value>
+			</list>
+		</property>
+		<property name="elementSet">
+			<set>
+				<value>Beril Köken</value>
+				<value>Burak Köken</value>
+			</set>
+		</property>
+		<property name="elementMap">
+			<map>
+				<entry key="1" value="Burak Köken"></entry>
+				<entry key="2" value="Şeyma Yılmaz"></entry>
+			</map>
+		</property>
+		<property name="elementProperties">
+			<props>
+				<prop key="FullName">Burak Köken</prop>
+				<prop key="Age">23</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
